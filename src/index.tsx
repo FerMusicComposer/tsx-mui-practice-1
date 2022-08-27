@@ -1,5 +1,5 @@
 import './styles/main.scss';
-import React from 'React';
+import React from 'react';
 import * as ReactDOM from 'react-dom/client';
 //import App from './App';
 
@@ -8,7 +8,7 @@ const Element = () => <h1>Test</h1>;
 
 root.render(
     <React.StrictMode>
-        <h1>Test</h1>
+        <Element />
     </React.StrictMode>,
 );
 
