@@ -6,7 +6,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 
 const config = {
-    entry: './src/index.ts',
+    entry: './src/index.tsx',
     output: {
         filename: 'bundle.[hash].js',
         path: path.join(__dirname, 'dist'),
@@ -46,7 +46,8 @@ const config = {
         ],
     },
     resolve: {
-        extensions: ['.js', '.tsx', '.ts', '.html', '.scss'],
+        modules: [path.resolve(__dirname, 'mui-project1'), 'node_modules'],
+        extensions: ['.ts', '.tsx', '.js'],
     },
 };
 
